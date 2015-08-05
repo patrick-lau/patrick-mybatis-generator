@@ -2,16 +2,16 @@ Mybatis Generator 扩展插件
 =================================== 
 介绍
 -----------------------------------
- "Mybatis Generator 扩展插件"是在Mybatis Generator(MBG)的基础上添加了扩展性的插件。
- 快速生成符合项目规范的代码风格，节约时间。
- 现已支持MySQL分页插件，序列化插件，Repository注解插件，命名规则插件等等
- Mybatis Generator(MBG) 介绍 ：[https://github.com/mybatis/generator](https://github.com/mybatis/generator)
+  "Mybatis Generator 扩展插件"是在Mybatis Generator(MBG)的基础上添加了扩展性的插件。 
+  快速生成符合项目规范的代码风格，节约时间。 
+  现已支持MySQL分页插件，序列化插件，Repository注解插件，命名规则插件等等 
+  Mybatis Generator(MBG) 介绍 ：[https://github.com/mybatis/generator](https://github.com/mybatis/generator)
 
 如何使用
 -----------------------------------
 ### 必备知识：
-1. Mybatis Generator
-2. Maven
+  1. Mybatis Generator
+  2. Maven
 
 ### 使用步骤
 1.在项目里的mybatis-generator-maven-plugin的依赖引用中，添加mybatis-generator-expand jar
