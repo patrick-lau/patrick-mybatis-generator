@@ -9,13 +9,13 @@
 
 ### 如何使用
 #### 必备知识：
-  1. Mybatis Generator
-  2. Maven
+    1. Mybatis Generator
+    2. Maven
 
 #### 使用步骤
-1.在项目里的mybatis-generator-maven-plugin的依赖引用中，添加mybatis-generator-expand jar
-2.在mybatis-generator-config.xml配置文件中添加<plugin>的配置
-3.maven run : mybatis-generator:generate
+    1. 在项目里的mybatis-generator-maven-plugin的依赖引用中，添加mybatis-generator-expand jar
+    2. 在mybatis-generator-config.xml配置文件中添加<plugin>的配置
+    3. maven run : mybatis-generator:generate
 
 更详细可参考mybatis-generator-expand-demo项目
 
