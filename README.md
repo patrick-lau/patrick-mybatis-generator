@@ -16,8 +16,8 @@
     1. 在项目里的mybatis-generator-maven-plugin的依赖引用中，添加mybatis-generator-expand jar
     2. 在mybatis-generator-config.xml配置文件中添加<plugin>的配置
     3. maven run : mybatis-generator:generate
+    更详细可参考mybatis-generator-expand-demo项目
 
-更详细可参考mybatis-generator-expand-demo项目
 
 ### 改进计划
     Mybatis Generator是针对数据库表生成一些简单的CRUD的操作，但在项目中涉及到大量多表联合查询，仍避免不了手写大量的SQL语句，
