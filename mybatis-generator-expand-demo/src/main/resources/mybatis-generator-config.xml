@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<context id="contextTest" targetRuntime="MyBatis3">
+		<property name="projectPath" value="E:\workspaces\patrick\mybatis-generator-expand-demo" />
+		
+		<plugin type="org.patrick.mybatis.generator.expand.MysqlPaginationPlugin"></plugin>
+		<plugin type="org.patrick.mybatis.generator.expand.PersistenceRepositoryAnnotationPlugin"></plugin>
+		<plugin type="org.patrick.mybatis.generator.expand.ModelSerializableFieldPlugin"></plugin>
+		<plugin type="org.patrick.mybatis.generator.expand.RenamePlugin">
+			<property name="mybatisMethodSuffix" value="Criteria"/>
+			<property name="persistenceObjectSuffix" value="Dao"/>
+			<property name="queryObjectSuffix" value="Criteria"/>
+		</plugin>
+	
+		<commentGenerator>
+			<property name="suppressAllComments" value="true" />
+		</commentGenerator>
+
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://127.0.0.1:3306/test" userId="root" password="123456" />
+
+		<javaModelGenerator targetPackage="org.patrick.mybatis.generator.demo.po" targetProject="src\main\java">
+			<property name="constructorBased" value="true" />
+			<property name="rootClass" value="org.patrick.mybatis.generator.demo.BasicBean" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetPackage="mapper" targetProject="src\main\resources" />
+
+		<javaClientGenerator targetPackage="org.patrick.mybatis.generator.demo.dao" targetProject="src\main\java" type="XMLMAPPER">
+		</javaClientGenerator>
+
+		<table tableName="user" domainObjectName="User"></table>
+
+	</context>
+</generatorConfiguration>
